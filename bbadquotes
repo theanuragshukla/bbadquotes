@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+res=$(curl --silent "https://api.breakingbadquotes.xyz/v1/quotes" | jq -r '.[].quote')
+echo "$res"
